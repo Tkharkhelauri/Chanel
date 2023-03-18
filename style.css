@@ -69,7 +69,7 @@ button {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    background: #3D8168;
+    background-color: #3D8168;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -80,9 +80,62 @@ button {
     gap: 11.61px;
     justify-content: center;
 }
+button:hover h6{
+    pointer-events: none;
+}
+button:hover {
+    background-color: #1A4032;
+    color: #FFFFFF;
+    
+}
 img[alt=parfume_desktop] {
     display: none;
 }
 img {
     max-width: 100%;
+}
+
+@media only screen and (min-width: 376px) {
+    body {
+        justify-content: center;
+        padding: 0px;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        align-self: center;
+
+    }
+    h1 {
+        
+        margin: 20px 0px 24px 0px;
+    }
+    img[alt=parfume_mobile] {
+    display: none;
+    }
+    img[alt=parfume_desktop] {
+        display: block;
+        width: 300px;
+   
+    }
+    .info {
+        padding: 32px;
+        width: 50%;
+    }
+    span {
+        text-decoration: line-through;
+    }
+    button {
+        width: 236px;
+    }
+    .prices {
+        margin: 29px 0px 30px 0px;
+    }
+    button:hover {
+        color: #1A4032;
+    }
 }
