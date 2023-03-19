@@ -80,8 +80,9 @@ button {
     gap: 11.61px;
     justify-content: center;
 }
-button:hover h6{
+button:hover #but_text{
     pointer-events: none;
+    color: #FFFFFF;
 }
 button:hover {
     background-color: #1A4032;
